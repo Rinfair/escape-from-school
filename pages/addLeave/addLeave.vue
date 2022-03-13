@@ -30,17 +30,21 @@
 		</view>
 		<!-- <input placeholder="结束时间:10-11 15:00" v-model="endDate" /> -->
 		<label>总时间<text class="subRed">*必填</text></label>
-		<input placeholder="共1天3小时" v-model="countDate" />
+		<input placeholder="1天3小时" v-model="countDate" />
 		<label>紧急联系人<text class="subRed">*必填</text></label>
 		<input placeholder="13555555555" v-model="phone" />
 		<label>请假原因<text class="subRed">*必填</text></label>
 		<input placeholder="(不少于10字)" v-model="reason" />
 		<label>抄送人<text class="subRed">*必填</text></label>
 		<input placeholder="无" v-model="cc" />
+		<label>目的地<text class="subRed">*必填</text></label>
+		<input placeholder="XX省/XX市/XX区/XXXXX(具体地址)" v-model="destination" />
+		<label>宿舍信息<text class="subGray"></text></label>
+		<input placeholder="若为空则填-" v-model="dorm" />
 		
 		<label>一级审批人<text class="subRed">*必填</text></label>
 		<input placeholder="一级审批人姓名" v-model="oneCheck" />
-		<label>一级审批人身份<text class="subRed">*必填</text></label>
+		<label>一级审批人身份<text class="subGray"></text></label>
 		<input placeholder="辅导员" v-model="oneCheckStatus" />
 		<label>一级审批意见<text class="subRed">*必填</text></label>
 		<input placeholder="无" v-model="oneCheckIdea" />

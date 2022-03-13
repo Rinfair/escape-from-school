@@ -90,6 +90,8 @@
 						<view class="main-content-info-left-file" style="width: 100%;" v-if="leave.imgFile != ''"><text style="color: #9EA8B4;">附件：</text><image :src="leave.imgFile" @click="imgFileClick"></image></view><br v-if="leave.imgFile != ''">
 						<view style="main-content-info-left-file">发起位置：</view><text style="color: #2C8CF0;">{{leave.address}}</text><br>
 						<view>抄送人：</view><text>{{leave.cc}}</text><br>
+						<view>目的地：</view><text>{{leave.destination}}</text><br>
+						<view>宿舍信息：</view><text>{{leave.dorm}}</text><br>
 						<view style="color:#F79A0D;width: 100%;">本人承诺填写的信息真实有效，并对本次提交请假申请的信息真实性负责。</view>
 					</view>
 				</view>
@@ -111,7 +113,7 @@
 								<view></view>
 							</view>
 							<view style="display: inline-block;position: relative;left: 60rpx;width: 72%;">
-								<text>一级：[{{leave.oneCheckStatus}}]{{leave.oneCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
+								<text>一级：{{leave.oneCheckStatus}}{{leave.oneCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
 							</view>
 							<view style="position: absolute;top: -6rpx;right: 0px;color: #9FA7B4;">{{leave.oneCheckDate}}</view>
 							<view class="main-content-checkState-checkInfo">审批意见：{{leave.oneCheckIdea}}</view>
@@ -122,7 +124,7 @@
 								<view></view>
 							</view>
 							<view style="display: inline-block;position: relative;left: 60rpx;width: 72%;">
-								<text>二级：[{{leave.twoCheckStatus}}]{{leave.twoCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
+								<text>二级：{{leave.twoCheckStatus}}{{leave.twoCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
 							</view><br>
 							<view style="position: absolute;top: -6rpx;right: 0px;color: #9FA7B4;">{{leave.twoCheckDate}}</view>
 							<view class="main-content-checkState-checkInfo">审批意见：{{leave.twoCheckIdea}}</view>
@@ -132,7 +134,7 @@
 								<view></view>
 							</view>
 							<view style="display: inline-block;position: relative;left: 60rpx;width: 72%;">
-								<text>三级：[{{leave.threeCheckStatus}}]{{leave.threeCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
+								<text>三级：{{leave.threeCheckStatus}}{{leave.threeCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
 							</view><br>
 							<view style="position: absolute;top: -6rpx;right: 0px;color: #9FA7B4;color: #9FA7B4;">{{leave.twoCheckDate}}</view>
 							<view class="main-content-checkState-checkInfo">审批意见：{{leave.threeCheckIdea}}</view>
