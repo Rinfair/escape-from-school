@@ -113,7 +113,7 @@
 								<view></view>
 							</view>
 							<view style="display: inline-block;position: relative;left: 60rpx;width: 72%;">
-								<text>一级：{{leave.oneCheckStatus}}{{leave.oneCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
+								<text>一级：{{leave.oneCheckStatus}}-{{leave.oneCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
 							</view>
 							<view style="position: absolute;top: -6rpx;right: 0px;color: #9FA7B4;">{{leave.oneCheckDate}}</view>
 							<view class="main-content-checkState-checkInfo">审批意见：{{leave.oneCheckIdea}}</view>
@@ -124,7 +124,7 @@
 								<view></view>
 							</view>
 							<view style="display: inline-block;position: relative;left: 60rpx;width: 72%;">
-								<text>二级：{{leave.twoCheckStatus}}{{leave.twoCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
+								<text>二级：{{leave.twoCheckStatus}}-{{leave.twoCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
 							</view><br>
 							<view style="position: absolute;top: -6rpx;right: 0px;color: #9FA7B4;">{{leave.twoCheckDate}}</view>
 							<view class="main-content-checkState-checkInfo">审批意见：{{leave.twoCheckIdea}}</view>
@@ -134,7 +134,7 @@
 								<view></view>
 							</view>
 							<view style="display: inline-block;position: relative;left: 60rpx;width: 72%;">
-								<text>三级：{{leave.threeCheckStatus}}{{leave.threeCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
+								<text>三级：{{leave.threeCheckStatus}}-{{leave.threeCheck}} - 审批<text style="color: #00CA76;">通过</text></text>
 							</view><br>
 							<view style="position: absolute;top: -6rpx;right: 0px;color: #9FA7B4;color: #9FA7B4;">{{leave.twoCheckDate}}</view>
 							<view class="main-content-checkState-checkInfo">审批意见：{{leave.threeCheckIdea}}</view>

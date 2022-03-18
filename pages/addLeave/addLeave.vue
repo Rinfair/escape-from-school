@@ -39,7 +39,7 @@
 		<input placeholder="无" v-model="cc" />
 		<label>目的地<text class="subRed">*必填</text></label>
 		<input placeholder="XX省/XX市/XX区/XXXXX(具体地址)" v-model="destination" />
-		<label>宿舍信息<text class="subGray"></text></label>
+		<label>宿舍信息<text class="subRed">*必填</text></label>
 		<input placeholder="若为空则填-" v-model="dorm" />
 		
 		<label>一级审批人<text class="subRed">*必填</text></label>
@@ -123,6 +123,8 @@
 				phone: '',
 				address: '',
 				cc: '',
+				dorm: '',
+				destination: '',
 				oneCheck: '',
 				oneCheckDate: '',
 				oneCheckTime: '',
@@ -157,6 +159,8 @@
 				this.phone = leave.phone;
 				this.address = leave.address;
 				this.cc = leave.cc;
+				this.destination = leave.destination;
+				this.dorm = leave.destination;
 				this.oneCheck = leave.oneCheck;
 				this.twoCheck = leave.twoCheck;
 				this.threeCheck = leave.threeCheck;
@@ -173,8 +177,9 @@
 				var that = this;
 				if (this.name == '' || this.type == '' || this.startDate == '' || this.startTime == '' ||
 					this.endDate == '' || this.endTime == '' || this.reason == '' || this.address == '' ||
-					this.cc == '' || this.phone == '' || this.oneCheckTime == '' || this.oneCheckStatus == '' ||
-					this.oneCheck == '' || this.countDate == '' || this.oneCheckDate == '' || this.oneCheckIdea == '') {
+					this.cc == '' || this.phone == '' || this.oneCheckTime == '' || this.oneCheck == '' ||
+					this.destination == '' || this.countDate == '' || this.oneCheckDate == '' || this.oneCheckIdea == '' ||
+					this.dorm == '') {
 					this.toast("请将必填信息填写完整", "none");
 					return;
 				}
@@ -212,6 +217,8 @@
 				obj['phone'] = this.phone;
 				obj['address'] = this.address;
 				obj['cc'] = this.cc;
+				obj['destination'] = this.destination;
+				obj['dorm'] = this.dorm;
 				obj['oneCheck'] = this.oneCheck;
 				obj['oneCheckDate'] = this.oneCheckDate + " " + this.oneCheckTime;
 				obj['oneCheckStatus'] = this.oneCheckStatus;
