@@ -2,8 +2,8 @@
     "name" : "请假助手",
     "appid" : "__UNI__6FBE17C",
     "description" : "",
-    "versionName" : "v1.1.02",
-    "versionCode" : 101,
+    "versionName" : "v1.1.10",
+    "versionCode" : 102,
     "app-plus" : {
         /* 5+App特有相关 */
         "modules" : {},
